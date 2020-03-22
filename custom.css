@@ -2,8 +2,14 @@ body {
   background-color: #e9ecef !important;
 }
 
-h1, h4 {
+h1, h4, h5 {
   text-align: center;
+  color: #212529 !important;
+}
+
+.btn-link,
+.collapsed {
+  text-decoration: none !important;
 }
 
 #jumbotron {
