@@ -1,143 +1,367 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anaheim&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </head>
-  <body>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CovApp - Handlungsempfehlung via Telefon</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-    <div class="jumbotron" id="jumbotron">
-      <img src="full_width.png" class="img-fluid" id="banner"/>
-      <p class="lead" style="text-align: center;">Nun sind Sie an der Reihe. Rufen Sie uns an! Rufen Sie Ihren Fragebogen mit dem erhaltenen Wortpaar ab!
-      <h1 class="display-4"><b>Telefon: <a href="tel:+3726682808">+372 668 2808</a></b></h1>
-      </p>
-      <hr class="my-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe  src="https://www.youtube.com/embed/dhxdjX0_2Ko" class="embed-responsive-item" allowfullscreen></iframe>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">3Words!</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Unsere Lösung</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Über uns</a>
+          </li>
+        </ul>
       </div>
-      <hr class="my-4">
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h4 class="display-4 text-wrap">Die Herausforderung</h4>
-              </button>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten,
-                wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist? Ärzte und Gesundheitsbehörden
-                versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung
-                wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger. Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine
-                Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen,
-                diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen
-                Situation abgehängt zu werden. Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.
-                </p>           
-          </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="img/icon.png" alt="">
+
+      <!-- Masthead Heading -->
+      <h2 class="text-uppercase mb-0" style="padding-bottom:40px;">Anrufen und Handlungsempfehlung erhalten!</h2>
+
+      <h1 class="masthead-heading text-uppercase mb-0"><a class="link-in-header" href="tel:+3726682808">+372 668 2808</a></h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h4 class="display-4 text-wrap">Die Lösung</h4>
-              </button>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden.
-                Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen
-                ist dem Selbsttest der Berliner Charité nachempfunden. Neben einer kompetenten Handlungsempfehlungen und Informationen zum weiteren Vorgehen, erhält der Anrufer
-                ein Wortpaar. Über das Wortpaar können im Anschluss, die im Telefonat gemachten Angaben, nachvollzogen werden (siehe <a  target="_blank" href="https://wirvsvirus-pwa.firebaseapp.com/">https://wirvsvirus-pwa.firebaseapp.com/</a> ).
-                Diese Lösung codiert unter Achtung des Datenschutzes ausschließlich das Wortpaar zu dem gegebenem Antwortverlauf und ist somit nicht personenspezifisch.
-                Es liegt somit im Ermessen des Anrufers, ob er seine Antworten durch Weitergabe des Wortpaares an Dritte weitergibt. Kliniken und Praxen nutzen bereits
-                den QR-Code als Schnittstelle für ihre existierenden Krankenhausinformationssysteme. Wir wandeln das Wortpaar ebenfalls in einen standardisierten QR-Code
-                um und stützen somit den bereits existierenden Prozess.
-              </p>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading text-uppercase font-weight-light mb-0"><a class="link-in-header" href="">note 3Words!</a></p>
+
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Unsere Lösung</h2>
+
+
+    <div class="text-center" style="padding:50px;">
+      <iframe width="800" height="520" src="https://www.youtube.com/embed/dhxdjX0_2Ko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h4 class="display-4 text-wrap">Die technische Umsetzung</h4>
-              </button>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">Zur Bereitstellung der Hotline wird Amazon Connect als skalierbare Kundencenter Lösung eingesetzt. Auf dieser Basis wurde ein Chatbot programmiert,
-                der über Sprach- oder Texteingabe mit dem Nutzer interagiert. Für die Spracherkennung und Validierung wird Amazon Lex und AWS Lambda verwendet. Die Interaktion mit
-                dem Nutzer sowie die anschließende Auswahl einer passenden Empfehlungen folgt einem hinterlegtem Entscheidungsbaum. Die Antwortmöglichkeiten der Nutzer belaufen
-                sich auf ca. 300 Mio. Kombinationen. Um diese auf eine nutzerfreundliche Weise zu kodieren ist jede Kombination auf ein Wortpaar aus der deutschen Sprache gemappt.
-                Dem Kunden wird das Wortpaar im Anschluss der Befragung zusammen mit der Empfehlung verbal vermittelt. Er kann es sich merken bzw. dieses Wortpaar notieren und es
-                mit einem Arzt zu teilen. Ein weiterer Service, der mit Ionic entwickelt wurde und als App bereitgestellt wird, kann vom Gesundheitspersonal genutzt werden um aus
-                dem Wortpaar den entsprechenden Antwortverlauf zu generieren und zu sichten. Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es
-                bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzgeung der QR-Codes wird für den Antwortverlauf das identische XML Schema
-                der Charité verwendet.
-              </p>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingFour">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <h4 class="display-4 text-wrap">Ein Ausblick</h4>
-              </button>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline
-                und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron
-                zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren
-                Bevölkerungsgruppe zur Verfügung stellen!
-              </p>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingFive">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                <h4 class="display-4 text-wrap">Mitwirkende</h4>
-              </button>
-          </div>
-          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">
-                <ul class="list-group">
-                  <!--<li class="list-group-item">Aaron Szerencses</li>-->
-                  <li class="list-group-item">Alexander Schönhals</li>
-                  <li class="list-group-item">Anna Lüders</li>
-                  <li class="list-group-item">Christopher Seidemann</li>
-                  <li class="list-group-item">Fabian Lüders</li>
-                  <li class="list-group-item">Philip Ehret</li>
-                  <li class="list-group-item">Ruben Koch</li>
-                  <li class="list-group-item">Thomas Hepp</li>
-                </ul>
-              </p>
-            </div>
-          </div>
+
+       
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Über uns</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingSix">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                <h4 class="display-4 text-wrap">Danksagungen</h4>
-              </button>
-          </div>
-          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-            <div class="card-body">
-              <p class="lead">Vielen Dank an das großartige #WirVsVirus-Team für den Support und die Hilfe.
-                Außerdem möchten wir uns bei Amazon bedanken, für die Bereitstellung der Serverstruktur.
-                Großen Dank geht an die Charitee, die uns Einblicke in den Aufbau ihrer App gegeben haben und uns
-                tatkräftig unterstützt haben.
-              </p>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">Im Rahmen des #WirVsVirus Hackathon haben wir als Team, bestehend aus Aaron Szerencses, Alexander Schönhals, Anna Lüders, Christopher Seidemann, Fabian Lüders, Philipp Ehret, Ruben Koch und Thomas Hepp wurde diese Lösung im stetigen Austausch mit den Entwicklern der CovApp entwickelt. </p>
+          <p class="lead">Vielen Dank an das großartige #WirVsVirus-Team für den Support und die Hilfe. Außerdem möchten wir uns bei Amazon bedanken, für die Bereitstellung der Serverstruktur. Großen Dank geht an die Charité, die uns Einblicke in den Aufbau ihrer App gegeben haben und uns tatkräftig unterstützt haben.</p>
+        
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren Bevölkerungsgruppe zur Verfügung stellen!</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location 
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">2215 John Daniel Drive
+            <br>Clark, MO 65243</p>
+        </div>-->
+
+        <!-- Footer Social Icons 
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Social Media</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-dribbble"></i>
+          </a>
+        </div>-->
+
+        <!-- Footer About Text -->
+        <div class="col-lg-12">
+          <h4 class="text-uppercase mb-4">Kontakt</h4>
+          <p class="lead mb-0"><a href="https://wirvsvirus.slack.com/archives/C0106QZQN73">slack@wirvsvirus</a></p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; 3Words! 2020</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Problemstellung</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+               
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten, wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist?</p>
+                <p class="mb-5">Ärzte und Gesundheitsbehörden versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger.</p>
+                <p class="mb-5">Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen, diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen Situation abgehängt zu werden.</p>
+                <p class="mb-5">Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Schließen
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </body>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Die Lösung</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden. Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen ist dem Selbsttest der Berliner Charité nachempfunden.</p>
+                <p class="mb-5">Neben einer kompetenten Handlungsempfehlungen und Informationen zum weiteren Vorgehen, erhält der Anrufer ein Wortpaar. Über das Wortpaar können im Anschluss, die im Telefonat gemachten Angaben, nachvollzogen werden (siehe https://wirvsvirus-pwa.firebaseapp.com/). Diese Lösung codiert unter Achtung des Datenschutzes ausschließlich das Wortpaar zu dem gegebenem Antwortverlauf und ist somit nicht personenspezifisch.</p>
+                <p class="mb-5">Es liegt somit im Ermessen des Anrufers, ob er seine Antworten durch Weitergabe des Wortpaares an Dritte weitergibt. Kliniken und Praxen nutzen bereits den QR-Code als Schnittstelle für ihre existierenden Krankenhausinformationssysteme. Wir wandeln das Wortpaar ebenfalls in einen standardisierten QR-Code um und stützen somit den bereits existierenden Prozess.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Schließen
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Umsetzung</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Zur Bereitstellung der Hotline wird Amazon Connect als skalierbare Kundencenter Lösung eingesetzt. Auf dieser Basis wurde ein Chatbot programmiert, der über Sprach- oder Texteingabe mit dem Nutzer interagiert. Für die Spracherkennung und Validierung wird Amazon Lex und AWS Lambda verwendet. Die Interaktion mit dem Nutzer sowie die anschließende Auswahl einer passenden Empfehlungen folgt einem hinterlegtem Entscheidungsbaum. Die Antwortmöglichkeiten der Nutzer belaufen sich auf ca. 300 Mio. Kombinationen.</p>
+                <p class="mb-5">Um diese auf eine nutzerfreundliche Weise zu kodieren ist jede Kombination auf ein Wortpaar aus der deutschen Sprache gemappt. Dem Kunden wird das Wortpaar im Anschluss der Befragung zusammen mit der Empfehlung verbal vermittelt. Er kann es sich merken bzw. dieses Wortpaar notieren und es mit einem Arzt zu teilen. Ein weiterer Service, der mit Ionic entwickelt wurde und als App bereitgestellt wird, kann vom Gesundheitspersonal genutzt werden um aus dem Wortpaar den entsprechenden Antwortverlauf zu generieren und zu sichten.</p>
+                <p class="mb-5">Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzgeung der QR-Codes wird für den Antwortverlauf das identische XML Schema der Charité verwendet.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Schließen
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
 </html>
