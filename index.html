@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src ="foo.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"crossorigin="anonymous">
   </head>
   <body>
-    <div class="jumbotron">
-      <h1 class="display-4">call me +372 668 2808</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-        Brauche weiteren text
+    <div class="container">
+    <div class="jumbotron" id="jumbotron">
+      <img src="full_width.png" class="img-fluid" id="banner"/>
+      <p class="lead" style="text-align: center;">Nun sind Sie an der Reihe. Rufen Sie uns an! Rufen Sie Ihren Fragebogen mit dem erhaltenen Wortpaar ab!
+      <h1 class="display-4"><b>Telefon: +372 668 2808</b></h1>
       </p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <h4 class="display-4">Die Herausforderung</h4>
+      <p class="lead">Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten,
+      wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist? Ärzte und Gesundheitsbehörden
+      versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung
+      wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger. Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine
+      Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen,
+      diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen
+      Situation abgehängt zu werden. Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.
+      </p>
+      <hr class="my-4">
+      <h4 class="display-4">Die Lösung</h4>
+      <p class="lead">Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden.
+        Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen
+        ist dem Selbsttest der Berliner Charité nachempfunden. Neben einer kompetenten Handlungsempfehlungen und Informationen zum weiteren Vorgehen, erhält der Anrufer
+        ein Wortpaar. Über das Wortpaar können im Anschluss, die im Telefonat gemachten Angaben, nachvollzogen werden (siehe https://wirvsvirus-pwa.firebaseapp.com/).
+        Diese Lösung codiert unter Achtung des Datenschutzes ausschließlich das Wortpaar zu dem gegebenem Antwortverlauf und ist somit nicht personenspezifisch.
+        Es liegt somit im Ermessen des Anrufers, ob er seine Antworten durch Weitergabe des Wortpaares an Dritte weitergibt. Kliniken und Praxen nutzen bereits
+        den QR-Code als Schnittstelle für ihre existierenden Krankenhausinformationssysteme. Wir wandeln das Wortpaar ebenfalls in einen standardisierten QR-Code
+        um und stützen somit den bereits existierenden Prozess.
+      </p>
+      <hr class="my-4">
+      <h4 class="display-4">Die technische Umsetzung
+      </h4>
+      <p class="lead">Zur Bereitstellung der Hotline wird Amazon Connect als skalierbare Kundencenter Lösung eingesetzt. Auf dieser Basis wurde ein Chatbot programmiert,
+        der über Sprach- oder Texteingabe mit dem Nutzer interagiert. Für die Spracherkennung und Validierung wird Amazon Lex und AWS Lambda verwendet. Die Interaktion mit
+        dem Nutzer sowie die anschließende Auswahl einer passenden Empfehlungen folgt einem hinterlegtem Entscheidungsbaum. Die Antwortmöglichkeiten der Nutzer belaufen
+        sich auf ca. 300 Mio. Kombinationen. Um diese auf eine nutzerfreundliche Weise zu kodieren ist jede Kombination auf ein Wortpaar aus der deutschen Sprache gemappt.
+        Dem Kunden wird das Wortpaar im Anschluss der Befragung zusammen mit der Empfehlung verbal vermittelt. Er kann es sich merken bzw. dieses Wortpaar notieren und es
+        mit einem Arzt zu teilen. Ein weiterer Service, der mit Ionic entwickelt wurde und als App bereitgestellt wird, kann vom Gesundheitspersonal genutzt werden um aus
+        dem Wortpaar den entsprechenden Antwortverlauf zu generieren und zu sichten. Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es
+        bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzgeung der QR-Codes wird für den Antwortverlauf das identische XML Schema
+        der Charité verwendet.
+      </p>
+      <hr class="my-4">
+      <h4 class="display-4">Ein Ausblick
+      </h4>
+      <p class="lead">Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline
+        und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron
+        zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren
+        Bevölkerungsgruppe zur Verfügung stellen!
+      </p>
+      <hr class="my-4">
     </div>
+  </div>
   </body>
 </html>
+
+
+
+
+
+
+
