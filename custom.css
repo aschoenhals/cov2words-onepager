@@ -6,7 +6,7 @@ body {
   font-family: 'Anaheim', sans-serif;
 }
 
-h1, h4, h5 {
+h1, h4, .card-header {
   text-align: center;
   color: #212529 !important;
 }
