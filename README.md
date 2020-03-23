@@ -28,5 +28,3 @@ It is therefore up to the caller to decide whether to pass on his answers to thi
 ## Acknowledgement
 
 We would like to thank the fantastic #WirVsVirus team for their support and help. We also thank Amazon for providing the server structure. Many thanks to the Charité, who gave us insights into the structure of their app and supported us actively.
-
----
