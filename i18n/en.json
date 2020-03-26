@@ -13,19 +13,19 @@
 	"note-2-words": "note 2words!",
 	"close": "close",
 
-	"about-details": "Im Rahmen des #WirVsVirus Hackathon haben wir als Team, bestehend aus Aaron Szerencses, Alexander Schönhals, Anna Lüders, Christopher Seidemann, Fabian Lüders, Philipp Ehret, Ruben Koch und Thomas Hepp eine Lösung im Austausch mit den Verantwortlichen der CovApp entwickelt.",
-	"about-acknowledgment": "Vielen Dank an das großartige #WirVsVirus-Team für den Support und die Hilfe. Außerdem möchten wir uns bei Amazon bedanken, für die Bereitstellung der Serverstruktur. Großen Dank geht an die Charité, die uns Einblicke in den Aufbau ihrer App gegeben haben und uns tatkräftig unterstützt haben.",
-	"about-future-work": "Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren Bevölkerungsgruppe zur Verfügung stellen!",
+	"about-details": "Within the #WirVsVirus Hackathon, we as a team consisting of Aaron Szerencses, Alexander Schoenhals, Anna Lueders, Christopher Seidemann, Fabian Lueders, Philip Ehret, Ruben Koch and Thomas Hepp developed a solution in exchange with the responsible persons of CovApp",
+	"about-ackknowledgment": "Many thanks to the great #WirVsVirus team for the support and help. Also, we would  like to thank Amazon, for providing the server structure. Many thanks to the Charité, who gave us insights into the structure of their app and actively supported us",
+	"about-future-work": "We are very interested in an official cooperation with  Charité Berlin and with the technical representatives of covapp. Our hotline and the subsequent data retrieval for medical personnel is currently only  looseley based on the model of the Charité, but can be synchronized with the existing questionnaire without much effort. We would like to offer our service and provide a medical consultation via phone to another population group!",
 
-	"contact": "Contact",
+	"contact": "contact",
 	"contact-slack": "slack@wirvsvirus",
 	"copyright": "Copyright",
 
 	"problem": "Problem",
-	"problem-paragraph-1": "Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten, wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist?",
-	"problem-paragraph-2": "Ärzte und Gesundheitsbehörden versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger.",
-	"problem-paragraph-3": "Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen, diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen Situation abgehängt zu werden.",
-	"problem-paragraph-4": "Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.",
+	"problem-paragraph-1": "In many places, cities and municipalities provide hotlines for citizens to answer questions about the coronavirus. What should be considered when returning from a risk area? Do you belong to a risk group yourself? How should you react if you show symptoms?",
+	"problem-paragraph-2": "Doctors and health authorities are tirelessly trying to determine the medical history of critical cases to know, which citizens should be tested and quarantined. The result: an additional strain on important personnel resources, overloaded lines and unsettled citizens.",
+	"problem-paragraph-3": "Technical solutions such as the WebApp of the Berlin Charité hospital try to offer an initial assessment with recommendations for action to concerned citizens as a first point of contact and to relieve the burden on health personnel. Unfortunately, these offers do not reach all citizens. Especially people who prefer to pick up the phone rather than inform themselves online, are running the risk of being left behind in the current situation",
+	"problem-paragraph-4": "A technical solution must not only meet these users' needs but also the high sensitivity of the data collected",
 
 	"solution": "Solution",
 	"solution-paragraph-1": "Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden. Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen ist dem Selbsttest der Berliner Charité nachempfunden.",
