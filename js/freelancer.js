@@ -72,13 +72,13 @@
             var countryCode = JSON.parse(JSON.stringify(response, null, 4)).country_code;
            
             if(countryCode == 'DE' || countryCode == 'AT' || countryCode == 'CH') {
-              $("#language a").text("DE");
+              $("#language a").text("EN");
               $.i18n( {
                 locale: 'de'
               } );
               $('html').i18n();     
             } else {
-              $("#language a").text("EN");
+              $("#language a").text("DE");
               $.i18n( {
                 locale: 'en'
               } );
@@ -92,13 +92,13 @@
     if($("#language a").text() == 'EN') {
       $("#language a").text("DE");
       $.i18n( {
-        locale: 'de'
+        locale: 'en'
       } );
       $('html').i18n();     
     } else {
       $("#language a").text("EN");
       $.i18n( {
-        locale: 'en'
+        locale: 'de'
       } );
       $('html').i18n();     
     }
