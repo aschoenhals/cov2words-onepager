@@ -14,7 +14,7 @@
 	"close": "close",
 
 	"about-details": "Within the #WirVsVirus Hackathon, we as a team consisting of Aaron Szerencses, Alexander Schoenhals, Anna Lueders, Christopher Seidemann, Fabian Lueders, Philip Ehret, Ruben Koch and Thomas Hepp developed a solution in exchange with the responsible persons of CovApp",
-	"about-ackknowledgment": "Many thanks to the great #WirVsVirus team for the support and help. Also, we would  like to thank Amazon, for providing the server structure. Many thanks to the Charité, who gave us insights into the structure of their app and actively supported us",
+	"about-acknowledgment": "Many thanks to the great #WirVsVirus team for the support and help. Also, we would  like to thank Amazon, for providing the server structure. Many thanks to the Charité, who gave us insights into the structure of their app and actively supported us",
 	"about-future-work": "We are very interested in an official cooperation with  Charité Berlin and with the technical representatives of covapp. Our hotline and the subsequent data retrieval for medical personnel is currently only  looseley based on the model of the Charité, but can be synchronized with the existing questionnaire without much effort. We would like to offer our service and provide a medical consultation via phone to another population group!",
 
 	"contact": "contact",
