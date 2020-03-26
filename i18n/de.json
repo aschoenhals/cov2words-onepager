@@ -1,0 +1,40 @@
+{
+	"title": "Cov2Words! - Handlungsempfehlung via Telefon",
+
+	"menu": "Menü",
+
+	"trademark": "Cov2Words!",
+
+	"our-solution": "Unsere Lösung",
+	"devpost": "devpost",
+	"about": "Über uns",
+	"get-recommendation": "Anrufen und Handlungsempfehlung erhalten!",
+	"phone-number": "+372 668 2808",
+	"note-2-words": "note 2words!",
+	"close": "Schließen",
+
+	"about-details": "Im Rahmen des #WirVsVirus Hackathon haben wir als Team, bestehend aus Aaron Szerencses, Alexander Schönhals, Anna Lüders, Christopher Seidemann, Fabian Lüders, Philipp Ehret, Ruben Koch und Thomas Hepp eine Lösung im Austausch mit den Verantwortlichen der CovApp entwickelt.",
+	"about-acknowledgment": "Vielen Dank an das großartige #WirVsVirus-Team für den Support und die Hilfe. Außerdem möchten wir uns bei Amazon bedanken, für die Bereitstellung der Serverstruktur. Großen Dank geht an die Charité, die uns Einblicke in den Aufbau ihrer App gegeben haben und uns tatkräftig unterstützt haben.",
+	"about-future-work": "Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren Bevölkerungsgruppe zur Verfügung stellen!",
+
+	"contact": "Kontakt",
+	"contact-slack": "slack@wirvsvirus",
+	"copyright": "Copyright",
+
+	"problem": "Problemstellung",
+	"problem-paragraph-1": "Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten, wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist?",
+	"problem-paragraph-2": "Ärzte und Gesundheitsbehörden versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger.",
+	"problem-paragraph-3": "Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen, diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen Situation abgehängt zu werden.",
+	"problem-paragraph-4": "Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.",
+
+	"solution": "Die Lösung",
+	"solution-paragraph-1": "Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden. Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen ist dem Selbsttest der Berliner Charité nachempfunden.",
+	"solution-paragraph-2": "Neben einer kompetenten Handlungsempfehlungen und Informationen zum weiteren Vorgehen, erhält der Anrufer ein Wortpaar. Über das Wortpaar können im Anschluss, die im Telefonat gemachten Angaben, nachvollzogen werden (siehe https://wirvsvirus-pwa.firebaseapp.com/). Diese Lösung codiert unter Achtung des Datenschutzes ausschließlich das Wortpaar zu dem gegebenem Antwortverlauf und ist somit nicht personenspezifisch.",
+	"solution-paragraph-3": "Es liegt somit im Ermessen des Anrufers, ob er seine Antworten durch Weitergabe des Wortpaares an Dritte weitergibt. Kliniken und Praxen nutzen bereits den QR-Code als Schnittstelle für ihre existierenden Krankenhausinformationssysteme. Wir wandeln das Wortpaar ebenfalls in einen standardisierten QR-Code um und stützen somit den bereits existierenden Prozess.",
+
+	"implementation": "Umsetzung",
+	"implementation-paragraph-1": "Zur Bereitstellung der Hotline wird Amazon Connect als skalierbare Kundencenter Lösung eingesetzt. Auf dieser Basis wurde ein Chatbot programmiert, der über Sprach- oder Texteingabe mit dem Nutzer interagiert. Für die Spracherkennung und Validierung wird Amazon Lex und AWS Lambda verwendet. Die Interaktion mit dem Nutzer sowie die anschließende Auswahl einer passenden Empfehlungen folgt einem hinterlegtem Entscheidungsbaum. Die Antwortmöglichkeiten der Nutzer belaufen sich auf ca. 300 Mio. Kombinationen.",
+	"implementation-paragraph-2": "Um diese auf eine nutzerfreundliche Weise zu kodieren ist jede Kombination auf ein Wortpaar aus der deutschen Sprache gemappt. Dem Anrufer wird das Wortpaar im Anschluss der Befragung zusammen mit der Empfehlung verbal vermittelt. Dieser kann es sich merken bzw. dieses Wortpaar notieren und es mit einem Arzt teilen. Ein weiterer Service, der mit Ionic entwickelt wurde und als App bereitgestellt wird, kann vom Gesundheitspersonal genutzt werden um aus dem Wortpaar den entsprechenden Antwortverlauf zu generieren und zu sichten.",
+	"implementation-paragraph-3": "Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzeugung der QR-Codes wird für den Antwortverlauf das identische XML Schema der Charité verwendet."
+
+}

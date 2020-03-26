@@ -60,4 +60,51 @@
     });
   });
 
+ 
+
+  $( document ).ready(function() {
+    
+    $.i18n().load( {
+        'en': 'i18n/en.json',
+        'de': 'i18n/de.json'
+    } ).done( function() { 
+        $.get("https://api.ipdata.co?api-key=test", function (response) {
+            var countryCode = JSON.parse(JSON.stringify(response, null, 4)).country_code;
+           
+            if(countryCode == 'DE' || countryCode == 'AT' || countryCode == 'CH') {
+              $("#language a").text("DE");
+              $.i18n( {
+                locale: 'de'
+              } );
+              $('html').i18n();     
+            } else {
+              $("#language a").text("EN");
+              $.i18n( {
+                locale: 'en'
+              } );
+              $('html').i18n();     
+            }
+        }, "jsonp");
+    } );
+  });
+
+  $("#language").click(function() {
+    if($("#language a").text() == 'EN') {
+      $("#language a").text("DE");
+      $.i18n( {
+        locale: 'de'
+      } );
+      $('html').i18n();     
+    } else {
+      $("#language a").text("EN");
+      $.i18n( {
+        locale: 'en'
+      } );
+      $('html').i18n();     
+    }
+    
+  });
+
 })(jQuery); // End of use strict
+
+  
