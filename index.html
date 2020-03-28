@@ -22,7 +22,7 @@
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+ 
   <script>
 
   </script>
@@ -117,20 +117,22 @@
               <h5 data-i18n="qr-code"></h5>
               <div class="card-deck">
                 <div class="card border-light text-center">
-                  <img class="card-img-top mx-auto" src="/img/qrcode.png" alt="Card image cap" style="display:inline;width:33%;">
+                  <div id="qr-code">
+                    <img id="qr-code-placeholder" class="card-img-top mx-auto" src="/img/qrcode.png" alt="Card image cap" style="display:inline;width:33%;">
+                  </div>
                   <div class="card-body">
                     <p class="card-text" data-i18n="choose-word-pair"></p>
                     <p class="card-text"><small class="text-muted" data-i18n="keep-in-order"></small></p>
                     <h5 class="card-title" data-i18n="word-1"></h5>
                     <div class="row card-text justify-content-center">
-                      <input list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
+                      <input id="list-1" list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
                       <datalist id="wordlist-1">
                       </datalist>
                     </div>
                     <div class="divider-custom divider-light"></div>
                     <h5 class="card-title" data-i18n="word-2"></h5>
                     <div class="row card-text justify-content-center">
-                      <input list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
+                      <input id="list-2" list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
                       <datalist id="wordlist-2">
                       </datalist>
                     </div>
@@ -410,6 +412,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.js"></script>
+  <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
 
   <!-- i18n -->
   <script src="jquery.i18n/CLDRPluralRuleParser.js"></script>

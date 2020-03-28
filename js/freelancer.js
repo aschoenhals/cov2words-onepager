@@ -823,9 +823,53 @@
       $("#wordlist-2").append($("<option>").attr('value', item).text(item));
     });
 
-    
+
+  });
+
+  function showPlaceholder() {
+    $('#qr-code canvas').remove();
+    $('#qr-code-placeholder').show();
+  }
 
 
+  // generate qr code if two words are selected
+  $('#list-1').on('input', function() {
+    if($('#list-2').val() != "") {
+        if(this.value == "") {
+          showPlaceholder();
+        } else {
+          var word1 = this.value;
+          var word2 = $('#list-2').val();
+          console.log("send request to backend based on " + word1 + " and " + word2 );
+          // on success generate code based on answer
+          generateCodeBasedOnAnswer(word1 + word2);
+        }
+    } else {
+        showPlaceholder();
+    }
+  });
+
+  function generateCodeBasedOnAnswer(a) { // TODO
+    $('#qr-code-placeholder').hide();
+    $('#qr-code canvas').remove();
+    $('#qr-code').qrcode({text:a});
+  }
+
+  // generate qr code if two words are selected
+  $('#list-2').on('input', function() {
+    if($('#list-1').val() != "") {
+      if(this.value == "") {
+        showPlaceholder();
+      } else {
+        var word2 = this.value;
+        var word1 = $('#list-1').val();
+        console.log("send request to backend based on " + word1 + " and " + word2 );
+        // on success generate code based on answer
+        generateCodeBasedOnAnswer(word1 + word2);
+      }
+    } else {
+        showPlaceholder();
+    }
   });
 
   $("#language").click(function () {
