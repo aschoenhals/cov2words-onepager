@@ -35,6 +35,12 @@
 	"implementation": "Umsetzung",
 	"implementation-paragraph-1": "Zur Bereitstellung der Hotline wird Amazon Connect als skalierbare Kundencenter Lösung eingesetzt. Auf dieser Basis wurde ein Chatbot programmiert, der über Sprach- oder Texteingabe mit dem Nutzer interagiert. Für die Spracherkennung und Validierung wird Amazon Lex und AWS Lambda verwendet. Die Interaktion mit dem Nutzer sowie die anschließende Auswahl einer passenden Empfehlungen folgt einem hinterlegtem Entscheidungsbaum. Die Antwortmöglichkeiten der Nutzer belaufen sich auf ca. 300 Mio. Kombinationen.",
 	"implementation-paragraph-2": "Um diese auf eine nutzerfreundliche Weise zu kodieren ist jede Kombination auf ein Wortpaar aus der deutschen Sprache gemappt. Dem Anrufer wird das Wortpaar im Anschluss der Befragung zusammen mit der Empfehlung verbal vermittelt. Dieser kann es sich merken bzw. dieses Wortpaar notieren und es mit einem Arzt teilen. Ein weiterer Service, der mit Ionic entwickelt wurde und als App bereitgestellt wird, kann vom Gesundheitspersonal genutzt werden um aus dem Wortpaar den entsprechenden Antwortverlauf zu generieren und zu sichten.",
-	"implementation-paragraph-3": "Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzeugung der QR-Codes wird für den Antwortverlauf das identische XML Schema der Charité verwendet."
+	"implementation-paragraph-3": "Angelehnt an das Vorgehen der Charité wird ebenfalls ein QR-Code erzeugt für den es bereits ein Prozedere zur Integration in das Krankenhausinformationssystem gibt. Für die Erzeugung der QR-Codes wird für den Antwortverlauf das identische XML Schema der Charité verwendet.",
 
+	"qr-code-request": "Erstelle den QR-Code",
+	"choose-word-pair": "Wählen Sie bitte die zwei Schlagwörter aus um die Anamnese-Daten zu generieren.",
+	"keep-in-order": "Die Reihenfolge der Schlagwörter muss eingehalten werden.",
+	"word-1": "Erstes Wort",
+	"word-2": "Zweites Wort",
+	"qr-code": "QR-Code"
 }

@@ -9,7 +9,7 @@
 	"devpost": "devpost",
 	"about": "about",
 	"get-recommendation": "give a call and get a recommendation!",
-	"phone-number": "+372 668 2808",
+	"phone-number": "+1 877-201-9777",
 	"note-2-words": "note 2words!",
 	"close": "close",
 
@@ -35,5 +35,12 @@
 	"implementation": "Application",
 	"implementation-paragraph-1": "To provide the hotline, Amazon Connect is used as a scalable customer center solution. On this base, a chatbot was programmed, which interacts with the user via voice or speech input. Amazon Lex and AWS Lambda are used for speech recognition and validation. The interaction with the user and the subsequent selection of a suitable recommendation follows a stored decision tree. The amount of response possibilities are approximately 300 million combinations",
 	"implementation-paragraph-2": "In order to encode these in a user-friendly way, each combination is mapped to a word pair from the German language. The caller gets the word pair together with the recommendation after the survey. The caller can memorize it or write down to share it with a doctor. Another service developed with Ionic provided as an app, can be used by health care personnel to generate and view the corresponding response history decoded from that pair of words",
-	"implementation-paragraph-3": "Based on the procedure of the Charité, a QR code is generated for which a procedure for integration into the hospital information system already exists. For the generation of the QR codes, the identical XML schema of the Charité is used for the response process"
+	"implementation-paragraph-3": "Based on the procedure of the Charité, a QR code is generated for which a procedure for integration into the hospital information system already exists. For the generation of the QR codes, the identical XML schema of the Charité is used for the response process",
+
+	"qr-code-request": "Generate QR-Code",
+	"choose-word-pair": "Please select your two keywords to generate the medical history data.",
+	"keep-in-order": "Notice that the order of the words must be followed.",
+	"word-1": "First word",
+	"word-2": "Second word",
+	"qr-code": "QR-Code"
 }

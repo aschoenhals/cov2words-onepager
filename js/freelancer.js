@@ -86,6 +86,35 @@
             }
         }, "jsonp");
     } );
+
+    // fill dataset
+    //http://cov2words.eba-ccn5bra4.eu-west-2.elasticbeanstalk.com/api/pair/get
+    var languagesReq = { "language": "de"};
+    $.ajax({
+      url: "http://cov2words.eba-ccn5bra4.eu-west-2.elasticbeanstalk.com/api/pair/get",
+      type: "GET",
+      
+      crossDomain: true,
+      data: JSON.stringify(languagesReq),
+      dataType: "jsonp",
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader('Authorization', make_base_auth("cov2words", "cov2test"));
+      },
+      success: function (response) {
+          var resp = JSON.parse(response)
+          alert(resp.status);
+      },
+      error: function (xhr, status) {
+          alert("error");
+      }
+    });
+
+    function make_base_auth(user, password) {
+      var tok = user + ':' + password;
+      var hash = btoa(tok);
+      return 'Basic ' + hash;
+  }
+
   });
 
   $("#language").click(function() {
@@ -103,6 +132,10 @@
       $('html').i18n();     
     }
     
+  });
+
+  $("#toggle-qr-code-request").click(function(){
+    $("#qr-code-request").slideToggle();
   });
 
 })(jQuery); // End of use strict

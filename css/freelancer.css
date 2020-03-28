@@ -6239,7 +6239,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #4DB6AC !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9768,6 +9768,61 @@ a.text-dark:hover, a.text-dark:focus {
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
+}
+
+.qr-code-request {
+  margin-bottom: -30px;
+  display:none;
+}
+
+.qr-code-request .qr-code-request-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.qr-code-request .qr-code-request-item .qr-code-request-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.qr-code-request .qr-code-request-item .qr-code-request-item-caption:hover {
+  opacity: 1;
+}
+
+.qr-code-request .qr-code-request-item .qr-code-request-item-caption .qr-code-request-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.qr-code-request-modal .qr-code-request-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .qr-code-request-modal .qr-code-request-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.qr-code-request-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
 }
 
 .portfolio {
