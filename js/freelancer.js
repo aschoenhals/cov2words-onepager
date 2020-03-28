@@ -102,17 +102,18 @@
     var languagesReq = { "language": "de" };
     //ajax req https://cov2words.hepp.io/api/pair/get
 
-
+/*
 
     $.ajax({
       url: "https://cov2words.hepp.io/api/pair/get",
-      headers: {
-          'Content-Type': 'application/json',
-          "Authorization": "Basic " + btoa("cov2words" + ":" + "cov2test")
-      },
-      type: "GET", /* or type:"GET" or type:"PUT" */
-      dataType: "json",
-      data: JSON.stringify(languagesReq),
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader('Authorization', "Basic Y292MndvcmRzOmNvdjJ0ZXN0");
+        xhr.setRequestHeader('Content-Type', '*');
+        xhr.setRequestHeader('Access-Control-Allow-Origin','*');
+    },
+      type: "GET",
+      dataType: "jsonp",
+      data: "language=de",
       success: function (result) {
           console.log(result);
       },
@@ -121,7 +122,7 @@
       }
    });
     
-
+*/
     var wordListEn = {
       "language": "en",
       "words": [
@@ -867,7 +868,11 @@
           var word2 = $('#list-2').val();
           console.log("send request to backend based on " + word1 + " and " + word2 );
           // on success generate code based on answer
-          generateCodeBasedOnAnswer(word1 + word2);
+          if(word1 == "job" && word2 == "morning") {
+            generateCodeBasedOnAnswer("<patient><b>1</b><t>2</t><v>1</v></patient>");
+          } else {
+            showPlaceholder();
+          }
         }
     } else {
         showPlaceholder();
@@ -888,9 +893,12 @@
       } else {
         var word2 = this.value;
         var word1 = $('#list-1').val();
-        console.log("send request to backend based on " + word1 + " and " + word2 );
         // on success generate code based on answer
-        generateCodeBasedOnAnswer(word1 + word2);
+        if(word1 == "job" && word2 == "morning") {
+          generateCodeBasedOnAnswer("<patient><b>1</b><t>2</t><v>1</v></patient>");
+        } else {
+          showPlaceholder();
+        }
       }
     } else {
         showPlaceholder();
