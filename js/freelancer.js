@@ -97,6 +97,19 @@
     var languagesReq = { "language": "de" };
     //ajax req http://cov2words.eba-ccn5bra4.eu-west-2.elasticbeanstalk.com/api/pair/get
 
+    var wordListEn = {
+      "language": "en",
+      "words": [
+        "man",
+        "job",
+        "mother",
+        "water",
+        "morning",
+        "night",
+        "month"
+      ]
+    };
+
     var wordList = {
       "language": "de",
       "words": [
@@ -805,7 +818,7 @@
       ]
     }
 
-    $.each(wordList.words, function (i, item) {
+    $.each(wordListEn.words, function (i, item) {
       $("#wordlist-1").append($("<option>").attr('value', item).text(item));
       $("#wordlist-2").append($("<option>").attr('value', item).text(item));
     });
