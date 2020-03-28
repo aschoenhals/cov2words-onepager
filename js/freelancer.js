@@ -100,7 +100,22 @@
     // TODO fill dataset/list (wordlist) with words requested at backend based on selected language
     
     var languagesReq = { "language": "de" };
-    //ajax req http://cov2words.eba-ccn5bra4.eu-west-2.elasticbeanstalk.com/api/pair/get
+    //ajax req https://cov2words.hepp.io/api/pair/get
+
+    $.ajax
+    ({
+      type: "GET",
+      url: "https://cov2words.hepp.io/api/pair/get",
+      dataType: 'json',
+      headers: {
+        "Authorization": "Basic " + btoa("cov2words" + ":" + "cov2test")
+      },
+      data: JSON.stringify(languagesReq),
+      success: function (data){
+          console.log(data);
+      }
+    });
+    
 
     var wordListEn = {
       "language": "en",
