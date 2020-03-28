@@ -68,7 +68,7 @@
       'en': 'i18n/en.json',
       'de': 'i18n/de.json'
     }).done(function () {
-      $.get("https://api.ipdata.co?api-key=test", function (response) {
+      /**$.get("https://api.ipdata.co?api-key=test", function (response) {
         var countryCode = JSON.parse(JSON.stringify(response, null, 4)).country_code;
 
         if (countryCode == 'DE' || countryCode == 'AT' || countryCode == 'CH') {
@@ -84,7 +84,11 @@
           });
           $('html').i18n();
         }
-      }, "jsonp");
+      }, "jsonp");*/
+      $.i18n({
+        locale: 'en'
+      });
+      $('html').i18n();
     });
 
 
