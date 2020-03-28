@@ -85,6 +85,7 @@
           $('html').i18n();
         }
       }, "jsonp");*/
+      $("#language a").text("DE");
       $.i18n({
         locale: 'en'
       });
