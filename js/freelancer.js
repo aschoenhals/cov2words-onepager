@@ -107,11 +107,11 @@
     $.ajax({
       url: "https://cov2words.hepp.io/api/pair/get",
       headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
           "Authorization": "Basic " + btoa("cov2words" + ":" + "cov2test")
       },
       type: "GET", /* or type:"GET" or type:"PUT" */
-      dataType: "jsonp",
+      dataType: "json",
       data: JSON.stringify(languagesReq),
       success: function (result) {
           console.log(result);
