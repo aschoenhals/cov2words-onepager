@@ -6247,10 +6247,7 @@ a.close.disabled {
   width:33%;
 }
 
-.qr-code-request {
-  box-shadow: 1px 10px 9px -6px inset;
-  background-color: rgb(178, 223, 219);
-}
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9787,6 +9784,7 @@ a.text-dark:hover, a.text-dark:focus {
 .qr-code-request {
   margin-bottom: -30px;
   display:none;
+  box-shadow: 1px 10px 9px -6px inset;
 }
 
 .qr-code-request .qr-code-request-item {
