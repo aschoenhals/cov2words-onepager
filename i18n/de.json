@@ -9,7 +9,7 @@
 	"devpost": "devpost",
 	"about": "Über uns",
 	"get-recommendation": "Anrufen und Handlungsempfehlung erhalten!",
-	"phone-number": "+41 800 001 706",
+	"phone-number": "+372 668 2808",
 	"note-2-words": "überprüfe deine 2Words!",
 	"open-clinic-dashboard": "zum Klink-Dashboard",
 	"close": "Schließen",
@@ -30,7 +30,7 @@
 	"problem-paragraph-4": "Eine technische Lösung muss nicht nur diesen Anwendern sondern auch der hohen Sensibilität der erhobenen Daten gerecht werden.",
 
 	"solution": "Die Lösung",
-	"solution-paragraph-1": "Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +41 800 001 706 eine erste Anlaufstelle geboten werden. Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen ist dem Selbsttest der Berliner Charité nachempfunden.",
+	"solution-paragraph-1": "Bürgern, die auf der Suche nach kompetenten Handlungsempfehlungen sind, soll mit der Hotline +372 668 2808 eine erste Anlaufstelle geboten werden. Hier wird mit den Anrufern ein umfassender Fragebogen zum Thema Ansteckungsrisiko und gesundheitlicher Situation durchgesprochen. Der durchgeführte Fragebogen ist dem Selbsttest der Berliner Charité nachempfunden.",
 	"solution-paragraph-2": "Neben einer kompetenten Handlungsempfehlungen und Informationen zum weiteren Vorgehen, erhält der Anrufer ein Wortpaar. Über die zwei Wörter können im Anschluss, die im Telefonat gemachten Angaben, nachvollzogen werden (siehe https://wirvsvirus-pwa.firebaseapp.com/). Diese Lösung codiert unter Achtung des Datenschutzes ausschließlich das Wortpaar zu dem gegebenem Antwortverlauf und ist somit nicht personenspezifisch.",
 	"solution-paragraph-3": "Es liegt somit im Ermessen des Anrufers, ob er seine Antworten durch Weitergabe der Wörter an Dritte weitergibt. Kliniken und Praxen nutzen bereits den QR-Code als Schnittstelle für ihre existierenden Krankenhausinformationssysteme. Wir wandeln das Wortpaar ebenfalls in einen standardisierten QR-Code um und stützen somit den bereits existierenden Prozess.",
 	
