@@ -106,7 +106,6 @@
     $('#wordlist-1').empty();
     $('#wordlist-2').empty();
     var languagesReq = $("#language a").text() == "DE" ? { "language": "en" } : { "language": "de" };
-      console.log(languagesReq);
       var wordList;
       $.ajax({
         url: 'https://cov2words.hepp.io/api/pair/get',
@@ -118,14 +117,12 @@
          
           if(data.error_code == 0) {
             wordList = JSON.parse(JSON.stringify(data)).data.words;
-            console.log(wordList);
             $.each(wordList, function (i, item) {
               $("#wordlist-1").append($("<option>").attr('value', item).text(item));
               $("#wordlist-2").append($("<option>").attr('value', item).text(item));
             })
           } else {
             wordList = wordListEn.words;
-            console.log(wordList);
             $.each(wordList, function (i, item) {
               $("#wordlist-1").append($("<option>").attr('value', item).text(item));
               $("#wordlist-2").append($("<option>").attr('value', item).text(item));
@@ -149,7 +146,6 @@
       } else {
         var word1 = this.value;
         var word2 = $('#list-2').val();
-        console.log("send request to backend based on " + word1 + " and " + word2);
         // on success generate code based on answer
         if (word1.toLowerCase() == "job" && word2.toLowerCase() == "morning") {
           generateCodeBasedOnAnswer("<patient><b>1</b><t>2</t><v>1</v></patient>");
@@ -213,7 +209,6 @@
 
 
   function generateCodeBasedOnSelectedWords(word1, word2) {
-    console.log(word1 + " " + word2);
     var language = $("#language a").text() == "DE" ? "en" : "de";
     var answerReq = {
       "language": language,
@@ -236,10 +231,8 @@
       dataType: 'json',
       data: JSON.stringify(answerReq),
       success: function (data) {
-        console.log(data);
         if(data.error_code == 0) {
           answer = JSON.parse(JSON.stringify(data)).data.answer;
-          console.log(answer);
           generateCodeBasedOnAnswer(answer);
         } else {
           showPlaceholder();
