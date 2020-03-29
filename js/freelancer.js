@@ -102,19 +102,7 @@
 
   });
 
-  var wordListEn = {
-    "words": [
-      "man",
-      "job",
-      "mother",
-      "water",
-      "morning",
-      "night",
-      "month"
-    ]
-  };
-
-  function loadWordListIntoSelection() {
+ function loadWordListIntoSelection() {
     $('#wordlist-1').empty();
     $('#wordlist-2').empty();
     var languagesReq = $("#language a").text() == "DE" ? { "language": "en" } : { "language": "de" };
@@ -226,8 +214,9 @@
 
   function generateCodeBasedOnSelectedWords(word1, word2) {
     console.log(word1 + " " + word2);
+    var language = $("#language a").text() == "DE" ? "en" : "de";
     var answerReq = {
-      "language": "de",
+      "language": language,
       "words": [
         {
           "order": 0,
