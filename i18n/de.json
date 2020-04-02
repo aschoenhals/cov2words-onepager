@@ -11,7 +11,7 @@
 	"get-recommendation": "Anrufen und Handlungsempfehlung erhalten!",
 	"phone-number": "+372 668 2808",
 	"note-2-words": "überprüfe deine 2Words!",
-	"open-clinic-dashboard": "zum Klink-Dashboard",
+	"open-clinic-dashboard": "zum Klinik-Dashboard",
 	"close": "Schließen",
 
 	"about-details": "Im Rahmen des #WirVsVirus Hackathon haben wir als Team, bestehend aus Aaron Szerencses, Alexander Schönhals, Anna Lüders, Christopher Seidemann, Fabian Lüders, Philip Ehret, Ruben Koch und Thomas Hepp eine Lösung im Austausch mit den Verantwortlichen der CovApp entwickelt.",
@@ -19,11 +19,13 @@
 	"about-future-work": "Wir sind stark an einer offiziellen Kooperation mit der Berliner Charité und den technischen Vertretern der covapp App interessiert. Unsere Hotline und der anschließende Datenabruf für medizinisches Personal ist aktuell lediglich an das Model der Charité angelehnt, kann allerdings mit geringem Umfang synchron zum existierenden Fragebogen gehalten werden. Gerne würden wir unseren Service zur Verfügung stellen und somit eine medizinisch fundierte Beratung einer weiteren Bevölkerungsgruppe zur Verfügung stellen!",
 
 	"contact": "Kontakt",
-	"contact-slack": "slack@cov2words",
-	"contact-email": "cov2words@alekzone.com",
+	"mail": "Mail",
+	"slack": "Slack",
+	"contact-slack": "cov2words.slack.com",
+	"contact-email": "mail@cov2words.com",
 	"copyright": "Copyright",
 
-	"problem": "Problemstellung",
+	"problem": "Problem",
 	"problem-paragraph-1": "Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten, wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist?",
 	"problem-paragraph-2": "Ärzte und Gesundheitsbehörden versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger.",
 	"problem-paragraph-3": "Technische Lösungen wie die WebApp der Berliner Charité versuchen durch eine Ersteinschätzung mit Handlungsempfehlungen besorgten Bürgern eine vorangestellte Anlaufstelle zu bieten und das Gesundheitspersonal zu entlasten. Leider erreichen, diese Angebote noch lange nicht alle Bürger. Besonders Personen, die noch lieber zum Hörer greifen als sich online zu informieren, laufen Gefahr in der aktuellen Situation abgehängt zu werden.",

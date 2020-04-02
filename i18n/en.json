@@ -19,8 +19,10 @@
 	"about-future-work": "We are very interested in an official cooperation with  Charité Berlin and with the technical representatives of covapp. Our hotline and the subsequent data retrieval for medical personnel is currently only  looseley based on the model of the Charité, but can be synchronized with the existing questionnaire without much effort. We would like to offer our service and provide a medical consultation via phone to another population group!",
 
 	"contact": "contact",
-	"contact-slack": "slack@cov2words",
-	"contact-email": "cov2words@alekzone.com",
+	"mail": "Mail",
+	"slack": "Slack",
+	"contact-slack": "cov2words.slack.com",
+	"contact-email": "mail@cov2words.com",
 	"copyright": "Copyright",
 
 	"problem": "Problem",
