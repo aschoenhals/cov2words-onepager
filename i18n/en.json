@@ -1,10 +1,7 @@
 {
 	"title": "Cov2Words! - Recommendation via Phone",
-
 	"menu": "Menu",
-
 	"trademark": "Cov2Words!",
-
 	"our-solution": "Our approach",
 	"devpost": "devpost",
 	"about": "about",
@@ -13,46 +10,39 @@
 	"note-2-words": "check your 2words!",
 	"open-clinic-dashboard": "open clinic dashboard",
 	"close": "close",
-
 	"about-details": "Within the #WirVsVirus Hackathon, we as a team consisting of Aaron Szerencses, Alexander Schoenhals, Anna Lueders, Christopher Seidemann, Fabian Lueders, Philip Ehret, Ruben Koch and Thomas Hepp developed a solution in exchange with the responsible persons of CovApp",
 	"about-acknowledgment": "Many thanks to the great #WirVsVirus team for the support and help. Also, we would  like to thank Amazon, for providing the server structure. Many thanks to the Charité, who gave us insights into the structure of their app and actively supported us",
 	"about-future-work": "We are very interested in an official cooperation with  Charité Berlin and with the technical representatives of covapp. Our hotline and the subsequent data retrieval for medical personnel is currently only  looseley based on the model of the Charité, but can be synchronized with the existing questionnaire without much effort. We would like to offer our service and provide a medical consultation via phone to another population group!",
-
 	"contact": "contact",
 	"mail": "Mail",
 	"slack": "Slack",
 	"contact-slack": "cov2words.slack.com",
 	"contact-email": "mail@cov2words.com",
 	"copyright": "Copyright",
-
 	"problem": "Problem",
 	"problem-paragraph-1": "In many places, cities and municipalities provide hotlines for citizens to answer questions about the coronavirus. What should be considered when returning from a risk area? Do you belong to a risk group yourself? How should you react if you show symptoms?",
 	"problem-paragraph-2": "Doctors and health authorities are tirelessly trying to determine the medical history of critical cases to know, which citizens should be tested and quarantined. The result: an additional strain on important personnel resources, overloaded lines and unsettled citizens.",
 	"problem-paragraph-3": "Technical solutions such as the WebApp of the Berlin Charité hospital try to offer an initial assessment with recommendations for action to concerned citizens as a first point of contact and to relieve the burden on health personnel. Unfortunately, these offers do not reach all citizens. Especially people who prefer to pick up the phone rather than inform themselves online, are running the risk of being left behind in the current situation",
 	"problem-paragraph-4": "A technical solution must not only meet these users' needs but also the high sensitivity of the data collected",
-
 	"solution": "The solution",
 	"solution-paragraph-1": "The hotline +41 800 001 706 is intended to provide a first point of contact for citizens in need of competent advice. A detailed questionnaire on the risk of infection and the current health situation will be evaluated with the caller. The questionnaire is based on the self-test of the Berlin Charité",
 	"solution-paragraph-2": "In addition to expert advice and information on how to proceed, the caller receives a word pair. The information given in the telephone call can then be traced via these two words (see https://wirvsvirus-pwa.firebaseapp.com/). This solution encodes only the word pair for the given responses, while respecting data protection, and is therefore non-personally identifiable information.",
 	"solution-paragraph-3": "Therefore it is up to the caller's discretion whether to pass on his answers to third parties by passing on the encoded twi words. Clinics and practices already use the QR Code as an interface for their existing hospital information systems. We also convert the word pair into a standardized QR code to support the existing process",
-
 	"implementation": "Application",
 	"implementation-paragraph-1": "To provide the hotline, Amazon Connect is used as a scalable customer center solution. On this base, a chatbot was programmed, which interacts with the user via voice or speech input. Amazon Lex and AWS Lambda are used for speech recognition and validation. The interaction with the user and the subsequent selection of a suitable recommendation follows a stored decision tree. The amount of response possibilities are approximately 300 million combinations",
 	"implementation-paragraph-2": "In order to encode these in a user-friendly way, each combination is mapped to a word pair from the German language. The caller gets the word pair together with the recommendation after the survey. The caller can memorize it or write down to share it with a doctor. Another service developed with Ionic provided as an app, can be used by health care personnel to generate and view the corresponding response history decoded from that pair of words",
 	"implementation-paragraph-3": "Based on the procedure of the Charité, a QR code is generated for which a procedure for integration into the hospital information system already exists. For the generation of the QR codes, the identical XML schema of the Charité is used for the response process",
-
 	"qr-code-request": "Get QR-Code",
 	"choose-word-pair": "Please select your two keywords to generate the medical history data.",
 	"keep-in-order": "Notice that the order of the words must be followed.",
 	"word-1": "First word",
 	"word-2": "Second word",
 	"qr-code": "QR-Code",
-
 	"achievements": "Achievements",
-	"achievements-winner-codevscovid19": "Winner at #CodeVSCovid19",
+	"achievements-winner-codevscovid19": "Best Project at #CodeVSCovid19",
 	"achievements-winner-codevscovid19-title": "#CodeVSCovid19",
-	"achievements-winner-codevscovid19-description": "Best Project for Health Companion Services at swiss Hackathon #CodeVsCovid19. Organized by ETH Zurich.",
-	"achievements-spotlight-pandemic": "Spotlight Team at Hack Covid-19",
+	"achievements-winner-codevscovid19-description": "When participating in CodevsCovid19, we were selected by the jury as one of the 3 best projects from over 1000 submissions. The Hackathon was organized by ETH Zurich and the goal was to award the Best Project for Health Companion Services.",
+	"achievements-spotlight-pandemic": "Spotlight at Pandemic Response",
 	"achievements-spotlight-pandemic-title": "Pandemic Response Hackathon",
-	"achievements-spotlight-pandemic-description": "Nominee as spotlight project at 'Public Health Information Sharing' track."
+	"achievements-spotlight-pandemic-description": "At the Pandemic Response Hackathon, organized by the US government, we were awarded by a jury of senators and former ministers for the best project in the area of Public Health Information Sharing. "
 }
