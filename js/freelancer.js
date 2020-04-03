@@ -96,12 +96,22 @@
       // TODO fill dataset/list (wordlist) with words requested at backend based on selected language
       loadWordListIntoSelection();
       loadYoutubeClipBasedOnLanguage();
-
+      loadPhoneNumberBasedOnLanguage();
     
 
     });
 
   });
+
+  function loadPhoneNumberBasedOnLanguage() {
+    if($("#language a").text() == "DE") {
+      // english
+      $("#phone-number").attr("href","tel:+18772019777")
+    } else {
+      // german
+      $("#phone-number").attr("href","tel:+3726682808")
+    }
+  }
 
  function loadYoutubeClipBasedOnLanguage() {
    if($("#language a").text() == "DE") {
@@ -111,8 +121,6 @@
      // german
      $("#youtube-clip").attr("src","https://www.youtube.com/embed/dhxdjX0_2Ko")
    }
-  
-
  }
 
  function loadWordListIntoSelection() {
@@ -214,7 +222,7 @@
     
     loadWordListIntoSelection();
     loadYoutubeClipBasedOnLanguage();
-
+    loadPhoneNumberBasedOnLanguage();
   });
 
   function generateCodeBasedOnSelectedWords(word1, word2) {
