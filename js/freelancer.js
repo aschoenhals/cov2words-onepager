@@ -95,12 +95,25 @@
 
       // TODO fill dataset/list (wordlist) with words requested at backend based on selected language
       loadWordListIntoSelection();
+      loadYoutubeClipBasedOnLanguage();
 
     
 
     });
 
   });
+
+ function loadYoutubeClipBasedOnLanguage() {
+   if($("#language a").text() == "DE") {
+     // english
+     $("#youtube-clip").attr("src","https://www.youtube.com/embed/Ng0sAYo9WKw")
+   } else {
+     // german
+     $("#youtube-clip").attr("src","https://www.youtube.com/embed/dhxdjX0_2Ko")
+   }
+  
+
+ }
 
  function loadWordListIntoSelection() {
     $('#wordlist-1').empty();
@@ -200,13 +213,9 @@
     }
     
     loadWordListIntoSelection();
+    loadYoutubeClipBasedOnLanguage();
 
   });
-
-  $("#toggle-qr-code-request").click(function () {
-    $("#qr-code-request").slideToggle();
-  });
-
 
   function generateCodeBasedOnSelectedWords(word1, word2) {
     var language = $("#language a").text() == "DE" ? "en" : "de";

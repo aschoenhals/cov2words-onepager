@@ -8,7 +8,7 @@
   <meta name="author" content="">
 
   <title data-i18n="title"></title>
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -48,7 +48,10 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio"
               data-i18n="our-solution"></a>
           </li>
-
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#achievements"
+              data-i18n="achievements"></a>
+          </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about" data-i18n="about"></a>
           </li>
@@ -73,7 +76,7 @@
     <div class="container d-flex align-items-center flex-column">
       <!-- Masthead Avatar Image -->
       <img class="masthead-avatar mb-5" src="img/icon_c2w_white.png" alt="">
-     
+
 
       <!-- Masthead Heading -->
       <h2 class="text-uppercase mb-0" style="padding-bottom:40px;-ms-hyphens: auto;-webkit-hyphens: auto;hyphens: auto;"
@@ -101,53 +104,7 @@
     </div>
   </header>
 
-  <!-- Section to request qr-code by word pair -->
-  <div id="qr-code-request-area"></div>
-  <section class="page-section qr-code-request" id="qr-code-request">
-    <div class="container">
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="qr-code-request"></h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light"></div>
-
-      <div class="card  mb-8">
-        <div class="card-body">
-          <div class="row justify-content-center align-items-center">
-
-            <div class="col-lg-10 text-center">
-              <h5 data-i18n="qr-code"></h5>
-              <div class="card-deck">
-                <div class="card border-light text-center">
-                  <div id="qr-code">
-                    <img id="qr-code-placeholder" class="card-img-top mx-auto" src="/img/qrcode.png"
-                      alt="Card image cap" style="display:inline;width:33%;">
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text" data-i18n="choose-word-pair"></p>
-                    <p class="card-text"><small class="text-muted" data-i18n="keep-in-order"></small></p>
-                    <h5 class="card-title" data-i18n="word-1"></h5>
-                    <div class="row card-text justify-content-center">
-                      <input id="list-1" list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
-                      <datalist id="wordlist-1">
-                      </datalist>
-                    </div>
-                    <div class="divider-custom divider-light"></div>
-                    <h5 class="card-title" data-i18n="word-2"></h5>
-                    <div class="row card-text justify-content-center">
-                      <input id="list-2" list="wordlist-1" value="" class="col-lg-10 custom-select custom-select-lg">
-                      <datalist id="wordlist-2">
-                      </datalist>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
@@ -155,11 +112,6 @@
 
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="our-solution"></h2>
-
-      <div class="embed-responsive embed-responsive-16by9" style="margin-top:40px;">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dhxdjX0_2Ko" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -209,11 +161,130 @@
           </div>
         </div>
 
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
 
+        <div class="embed-responsive embed-responsive-16by9" style="margin-top:40px;">
+          <iframe id="youtube-clip" class="embed-responsive-item" src="https://www.youtube.com/embed/dhxdjX0_2Ko" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
       </div>
       <!-- /.row -->
 
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="page-section portfolio achievements bg-primary" id="achievements">
+    <div class="container">
+
+      <h2 class="page-section-heading text-center text-uppercase text-white" data-i18n="achievements"></h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row justify-content-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#winner1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <h1 data-i18n="achievements-winner-codevscovid19"></h1>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/achievements/gold.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#winner2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <h1 data-i18n="achievements-spotlight-pandemic"></h1>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/achievements/spotlight.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+
+  <!-- Section to request qr-code by word pair -->
+  <div id="qr-code-request-area"></div>
+  <section class="page-section qr-code-request" id="qr-code-request">
+    <div class="container">
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="qr-code-request"></h2>
+
+     <!-- Icon Divider -->
+     <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+      <div class="card border-none mb-8">
+        <div class="card-body ">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10 ">
+              <div class="card-deck">
+                <div class="card border-none text-center">
+                  <div class="card-body">
+                    <p class="card-text" data-i18n="choose-word-pair"></p>
+                    <p class="card-text"><small class="text-muted" data-i18n="keep-in-order"></small></p>
+                    <div class="row p-4">
+                      <div class="col col-lg-8">
+                        <h5 class="card-title" data-i18n="word-1"></h5>
+                        <div class="row card-text justify-content-center">
+                          <input id="list-1" list="wordlist-1" value=""
+                            class="col-lg-10 custom-select custom-select-lg">
+                          <datalist id="wordlist-1">
+                          </datalist>
+                        </div>
+                        <div class="divider-custom divider-light"></div>
+                        <h5 class="card-title" data-i18n="word-2"></h5>
+                        <div class="row card-text justify-content-center">
+                          <input id="list-2" list="wordlist-1" value=""
+                            class="col-lg-10 custom-select custom-select-lg">
+                          <datalist id="wordlist-2">
+                          </datalist>
+                        </div>
+                      </div>
+                      <div class="col col-lg-4">
+                        <h5 data-i18n="qr-code"></h5>
+                        <div id="qr-code">
+                          <img id="qr-code-placeholder" class="card-img-top mx-auto" src="/img/qrcode.png"
+                            alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -266,12 +337,11 @@
       <div class="row justify-content-center">
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100 bg-primary">
+          <div class="card py-4 h-100 bg-secondary border-none">
             <div class="card-body text-center ">
               <i class="fas fa-envelope fa-lg text-white mb-2"></i>
               <h4 class="text-uppercase text-white m-0" data-i18n="email"></h4>
-              <hr class="my-4 border-light">
-              <div class="text-black-50">
+              <div class="text-black-50 lead">
                 <a class="link-in-header" href="mailto:mail@cov2words.com" data-i18n="contact-email"></a>
               </div>
             </div>
@@ -279,12 +349,11 @@
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100 bg-primary">
+          <div class="card py-4 h-100 bg-secondary border-none">
             <div class="card-body text-center">
               <i class="fab fa-slack fa-lg text-white mb-2"></i>
               <h4 class="text-uppercase text-white m-0" data-i18n="slack"></h4>
-              <hr class="my-4 border-light">
-              <div class="text-black-50"><a class="link-in-header" href="https://cov2words.slack.com"
+              <div class="text-black-50 lead"><a class="link-in-header" href="https://cov2words.slack.com"
                   data-i18n="contact-slack"></a></div>
             </div>
           </div>
@@ -420,6 +489,83 @@
                 <p class="mb-5" data-i18n="implementation-paragraph-1"></p>
                 <p class="mb-5" data-i18n="implementation-paragraph-2"></p>
                 <p class="mb-5" data-i18n="implementation-paragraph-3"></p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal" data-i18n="close">
+                  <i class="fas fa-times fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Gold Winner -->
+  <div class="portfolio-modal modal fade" id="winner1" tabindex="-1" role="dialog"
+    aria-labelledby="winner1" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" data-i18n="achievements-winner-codevscovid19-title"></h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" data-i18n="achievements-winner-codevscovid19-description"></p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal" data-i18n="close">
+                  <i class="fas fa-times fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Spotlight Winner -->
+  <div class="portfolio-modal modal fade" id="winner2" tabindex="-1" role="dialog"
+    aria-labelledby="winner2" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" data-i18n="achievements-spotlight-pandemic-title"></h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" data-i18n="achievements-spotlight-pandemic-description"></p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal" data-i18n="close">
                   <i class="fas fa-times fa-fw"></i>
                 </button>

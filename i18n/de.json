@@ -46,5 +46,13 @@
 	"keep-in-order": "Die Reihenfolge der Schlagwörter muss eingehalten werden.",
 	"word-1": "Erstes Wort",
 	"word-2": "Zweites Wort",
-	"qr-code": "QR-Code"
+	"qr-code": "QR-Code",
+
+	"achievements": "Erfolge",
+	"achievements-winner-codevscovid19": "Winner at #CodeVSCovid19",
+	"achievements-winner-codevscovid19-title": "#CodeVSCovid19",
+	"achievements-winner-codevscovid19-description": "Best Project for Health Companion Services beim schweizer Hackathon #CodeVsCovid19. Träger war ETH Zürich.",
+	"achievements-spotlight-pandemic": "Spotlight Team at Hack Covid-19",
+	"achievements-spotlight-pandemic-title": "Pandemic Response Hackathon",
+	"achievements-spotlight-pandemic-description": "Nominiert für das beste Projekt in der Kategorie 'Public Health Information Sharing'."
 }

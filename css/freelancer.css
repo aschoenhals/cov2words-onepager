@@ -6239,12 +6239,12 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #4DB6AC !important;
+  background-color: #1abc9c !important;
 }
 
 #qr-code canvas {
   display:inline;
-  width:33%;
+  width:100%;
 }
 
 
@@ -6252,7 +6252,7 @@ a.close.disabled {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #148f77 !important;
+  background-color: #1abc9c !important;
 }
 
 .bg-secondary {
@@ -9781,10 +9781,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.border-none {
+  border:none;
+}
+
 .qr-code-request {
   margin-bottom: -30px;
-  display:none;
-  box-shadow: 1px 10px 9px -6px inset;
 }
 
 .qr-code-request .qr-code-request-item {
