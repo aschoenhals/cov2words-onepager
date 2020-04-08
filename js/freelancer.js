@@ -129,7 +129,7 @@
     var languagesReq = $("#language a").text() == "DE" ? { "language": "en" } : { "language": "de" };
       var wordList;
       $.ajax({
-        url: 'https://cov2words.hepp.io/api/pair/get',
+        url: 'https://api.cov2words.com/api/pair/get',
         type: 'POST',
         contentType: "application/json",
         dataType: 'json',
@@ -242,7 +242,7 @@
     };
     var answer;
     $.ajax({
-      url: 'https://cov2words.hepp.io/api/pair/answers/get',
+      url: 'https://api.cov2words.com/api/pair/answers/get',
       type: 'POST',
       contentType: "application/json",
       dataType: 'json',
