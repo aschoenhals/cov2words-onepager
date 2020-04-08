@@ -17,8 +17,9 @@
 	"mail": "Mail",
 	"slack": "Slack",
 	"contact-slack": "cov2words.slack.com",
-	"contact-email": "cov2words@alekzone.com",
+	"contact-email": "mail@cov2words.com",
 	"copyright": "Copyright",
+	"more": "mehr...",
 	"problem": "Problem",
 	"problem-paragraph-1": "Vielerorts stellen Städte und Gemeinden Hotlines für Bürger bereit, bei denen sich Fragen zum Coronavirus aufdrängen. Was ist zu beachten, wenn man aus einem Risikogebiet zurückkehrt. Gehört man selbst zu einer Risikogruppe? Wie ist zu reagieren, wenn man Symptome aufweist?",
 	"problem-paragraph-2": "Ärzte und Gesundheitsbehörden versuchen unermüdlich durch Anamnesegespräche festzustellen, bei welchen Bürgern ein Test und Quarantäne anzuordnen sind. Das Resultat: eine zusätzliche Belastung wichtiger personeller Ressourcen, überlastete Leitungen und verunsicherte Bürger.",
@@ -39,10 +40,20 @@
 	"word-2": "Zweites Wort",
 	"qr-code": "QR-Code",
 	"achievements": "Erfolge",
-	"achievements-winner-codevscovid19": "Best Project at #CodeVSCovid19",
+	"achievements-winner-codevscovid19": "Winner at #CodeVSCovid19",
 	"achievements-winner-codevscovid19-title": "#CodeVSCovid19",
 	"achievements-winner-codevscovid19-description": "Bei der Teilnahme an CodevsCovid19 wurden wir von der Jury aus über 1000 Einreichungen zu einem der 3 besten Projekte gewählt. Der Hackathon wurde von der ETH Zürich organisiert und prämiert wurden die besten Lösungen im Bereich Best Project for Health Companion Services. ",
+	"achievements-winner-codevscovid19-result": "Bestes Projekt bei",
+	"achievements-winner-codevscovid19-patron": "der Schweizerischen Eidgenossenschaft und der ETH Zürich",
 	"achievements-spotlight-pandemic": "Spotlight at Pandemic Response",
 	"achievements-spotlight-pandemic-title": "Pandemic Response Hackathon",
-	"achievements-spotlight-pandemic-description": "Bei dem Pandemic Response Hackathon, organisiert von der amerikanischen Regierung wurden wir von einer Jury bestehend aus Senatoren und ehemaligen Ministern zum besten Projekt im Bereich Public Health Information Sharing ausgezeichnet. "
+	"achievements-spotlight-pandemic-description": "Bei dem Pandemic Response Hackathon, organisiert von der amerikanischen Regierung wurden wir von einer Jury bestehend aus Senatoren und ehemaligen Ministern zum besten Projekt im Bereich Public Health Information Sharing ausgezeichnet. ",
+	"achievements-spotlight-pandemic-result": "Spotlight Projekt bei",
+	"achievements-spotlight-pandemic-patron": "des Ministeriums für Gesundheitspflege und Soziale Dienste der Vereinigten Staaten",
+	"achievements-winner-versusvirus": "Winner at #VersusVirus",
+	"achievements-winner-versusvirus-title": "#VersusVirus",
+	"achievements-winner-versusvirus-description": "Bei der Teilnahme an VersusVirus wurden wir von der Jury aus über 1000 Teilnehmern zu einem der besten Projekte gewählt. Der Hackathon wurde von der Schweizerischen Eidgenossenschaft organisiert und prämiert. ",
+	"achievements-winner-versusvirus-result": "Bestes Projekt bei",
+	"achievements-winner-versusvirus-patron": "der Schweizerischen Eidgenossenschaft"
+
 }
