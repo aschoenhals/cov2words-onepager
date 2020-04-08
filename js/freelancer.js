@@ -106,7 +106,7 @@
   function loadPhoneNumberBasedOnLanguage() {
     if($("#language a").text() == "DE") {
       // english
-      $("#phone-number").attr("href","tel:+18772019777")
+      $("#phone-number").attr("href","tel:+18337001779")
     } else {
       // german
       $("#phone-number").attr("href","tel:+3726682808")
