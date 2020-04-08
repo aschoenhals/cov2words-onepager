@@ -183,6 +183,7 @@
     $('#qr-code-placeholder').hide();
     $('#qr-code canvas').remove();
     $('#qr-code').qrcode({ text: a });
+    $('#qr-code canvas').attr("title", a);
   }
 
   // generate qr code if two words are selected
