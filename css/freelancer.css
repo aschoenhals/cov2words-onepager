@@ -6242,6 +6242,11 @@ a.close.disabled {
   background-color: #1abc9c !important;
 }
 
+.bg-gradient {
+  background: rgb(22,175,144);
+background: linear-gradient(180deg, rgba(22,175,144,1) 10%, rgba(26,188,156,1) 25%, rgba(26,188,156,1) 80%, rgba(22,175,144,1) 90%);
+}
+
 #qr-code canvas {
   display:inline;
   width:100%;
