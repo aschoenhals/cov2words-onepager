@@ -116,10 +116,10 @@
  function loadYoutubeClipBasedOnLanguage() {
    if($("#language a").text() == "DE") {
      // english
-     $("#youtube-clip").attr("src","https://www.youtube.com/embed/Ng0sAYo9WKw")
+     $("#youtube-clip").attr("src","https://www.youtube.com/embed/Pmg8cC5xfEc")
    } else {
      // german
-     $("#youtube-clip").attr("src","https://www.youtube.com/embed/dhxdjX0_2Ko")
+     $("#youtube-clip").attr("src","https://www.youtube.com/embed/Pmg8cC5xfEc")
    }
  }
 
